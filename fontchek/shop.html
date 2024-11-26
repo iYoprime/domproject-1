@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="shop.css">
+    
+</head>
+<body>
+    <script src="shopp.js"></script>
+    <div class="cart-container">
+        <h1>Your Shopping Cart</h1>
+        <div id="cart-items">
+            <div class="cart-item" data-id="1">
+                <img src="banan.jpg" alt="Item 1" class="item-image">
+                <span class="item-name">Item 1</span>
+                <button class="heart-btn">❤️</button>
+                <span class="item-price" data-price="2.99">$2.99</span>
+                <button class="decrease-qty">-</button>
+                <input type="number" class="item-qty" value="1" min="1">
+                <button class="increase-qty">+</button>
+                <button class="delete-item">Delete</button>
+            </div>
+            <div class="cart-item" data-id="2">
+                <img src="milk.jpg" alt="Item 2" class="item-image">
+                <span class="item-name">Item 2</span>
+                <button class="heart-btn">❤️</button>
+                <span class="item-price" data-price="1.50">$1.50</span>
+                <button class="decrease-qty">-</button>
+                <input type="number" class="item-qty" value="1" min="1">
+                <button class="increase-qty">+</button>
+                <button class="delete-item">Delete</button>
+            </div>
+            <div class="cart-item" data-id="3">
+                <img src="chockp.jpg" alt="Item 3" class="item-image">
+                <span class="item-name">Item 3</span>
+                <button class="heart-btn">❤️</button>
+                <span class="item-price" data-price="1.75">$1.75</span>
+                <button class="decrease-qty">-</button>
+                <input type="number" class="item-qty" value="1" min="1">
+                <button class="increase-qty">+</button>
+                <button class="delete-item">Delete</button>
+            </div>
+        </div>
+        <div class="total">
+            <span>Total: </span><span id="total-price">$0.00</span>
+        </div>
+    </div>
+</div>
+<div>
+<!-- Final Payment Button -->
+<button id="proceed-payment" class="payment-button">Proceed to Payment</button>
+    </div>
+
+    
+</body>
+</html>
